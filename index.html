@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdnanBfStore</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+}
+
+header{
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(135deg,#00c3ff,#0044ff);
+box-shadow:0 0 30px cyan;
+}
+
+header h1{
+font-size:40px;
+text-shadow:0 0 20px cyan;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.section{
+padding:30px 15px;
+}
+
+.title{
+text-align:center;
+font-size:28px;
+color:#00ffff;
+margin-bottom:20px;
+}
+
+select{
+width:100%;
+padding:15px;
+border-radius:10px;
+font-size:16px;
+background:#111827;
+color:white;
+border:1px solid cyan;
+}
+
+.btn{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+background:cyan;
+color:black;
+font-weight:bold;
+font-size:18px;
+cursor:pointer;
+}
+
+.btn:hover{
+box-shadow:0 0 20px cyan;
+}
+
+.card{
+background:#111827;
+border:1px solid cyan;
+padding:20px;
+margin-top:15px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,255,255,.4);
+}
+
+.payment{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.pay{
+width:250px;
+background:#111827;
+border:1px solid cyan;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.stat{
+background:#111827;
+padding:15px;
+border-radius:10px;
+border:1px solid cyan;
+}
+
+.testi{
+background:#111827;
+padding:15px;
+border-left:5px solid cyan;
+margin-top:10px;
+border-radius:10px;
+}
+
+.wa-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:20px;
+background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ADNANBFSTORE</h1>
+<p>🎮 JOKI BLOX FRUITS 🎮</p>
+<p>⭐⭐⭐⭐⭐ Trusted Store</p>
+</header>
+
+<div class="section">
+
+<h2 class="title">📋 Pilih Layanan</h2>
+
+<select id="layanan">
+
+<optgroup label="LEVEL">
+<option>100 Level Sea 1 - 6K</option>
+<option>100 Level Sea 2/Sea 3 - 5K</option>
+</optgroup>
+
+<optgroup label="MASTERY">
+<option>100 Mastery Melee - 5K</option>
+<option>100 Mastery Sword - 5K</option>
+<option>100 Mastery Gun - 6K</option>
+<option>100 Mastery Fruit - 5K</option>
+</optgroup>
+
+<optgroup label="BOSS">
+<option>Kill Rip Indra - 15K</option>
+<option>Kill Dough King - 15K</option>
+<option>Kill Darkbeard - 15K</option>
+<option>Kill Soul Reaper - 8K</option>
+</optgroup>
+
+<optgroup label="RAID">
+<option>Raid Biasa - 2K</option>
+<option>Raid Buddha - 3K</option>
+<option>Raid Dough - 3K</option>
+</optgroup>
+
+<optgroup label="SWORD">
+<option>Yama - 13K</option>
+<option>Tushita - 15K</option>
+<option>CDK - 45K</option>
+<option>TTK - 15K</option>
+</optgroup>
+
+<optgroup label="GUN">
+<option>Kabutcha - 3K</option>
+<option>Dragon Storm - 20K</option>
+<option>Skull Guitar - 10K</option>
+</optgroup>
+
+<optgroup label="RACE">
+<option>Race Ghoul - 20K</option>
+<option>Race Cyborg - 25K</option>
+<option>Race Draco - 10K</option>
+</optgroup>
+
+<optgroup label="ISLAND">
+<option>Mirage Island - 8K</option>
+<option>Kitsune Island - 10K</option>
+<option>Prehistoric Island - 10K</option>
+</optgroup>
+
+</select>
+
+<button class="btn" onclick="orderWA()">
+ORDER SEKARANG
+</button>
+
+</div>
+
+<div class="section">
+
+<h2 class="title">💳 Metode Pembayaran</h2>
+
+<div class="payment">
+
+<div class="pay">
+<h3>QRIS</h3>
+<p>Upload gambar QRIS kamu nanti di sini</p>
+</div>
+
+<div class="pay">
+<h3>DANA</h3>
+<h2>085831739155</h2>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="title">📊 Statistik</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>500+</h3>
+<p>Order Selesai</p>
+</div>
+
+<div class="stat">
+<h3>300+</h3>
+<p>Customer</p>
+</div>
+
+<div class="stat">
+<h3>4.9⭐</h3>
+<p>Rating</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="title">⭐ Testimoni</h2>
+
+<div class="testi">
+⭐⭐⭐⭐⭐ Pelayanan cepat dan aman.
+</div>
+
+<div class="testi">
+⭐⭐⭐⭐⭐ Admin ramah dan terpercaya.
+</div>
+
+<div class="testi">
+⭐⭐⭐⭐⭐ Recommended untuk joki Blox Fruits.
+</div>
+
+</div>
+
+<a class="wa-float"
+href="https://wa.me/6285831739155">
+WhatsApp
+</a>
+
+<footer>
+© 2026 AdnanBfStore | All Rights Reserved
+</footer>
+
+<script>
+function orderWA(){
+let layanan =
+document.getElementById("layanan").value;
+
+window.open(
+"https://wa.me/6285831739155?text=Halo%20AdnanBfStore,%20saya%20ingin%20order%20"+encodeURIComponent(layanan)
+);
+}
+</script>
+
+</body>
+</html>
